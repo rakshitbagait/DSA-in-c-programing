@@ -13,5 +13,5 @@ int main(){
     }
     average =sum/terms;
     printf("The average of the numbers is %d",average);
-
+    return 0;
 }
