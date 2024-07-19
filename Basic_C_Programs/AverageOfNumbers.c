@@ -13,6 +13,6 @@ int main(){
     }
     average =sum/terms;
     printf("The average of the number is %d",average);
-    
+    return 0;
 
 }
