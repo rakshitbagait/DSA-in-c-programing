@@ -12,7 +12,6 @@ int main(){
         count++;
     }
     average =sum/terms;
-    printf("The average of the number is %d",average);
-    return 0;
+    printf("The average of the numbers is %d",average);
 
 }
