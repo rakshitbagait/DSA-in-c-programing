@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    char itemName[50];
+    char itemName[50][50];
     int quantity[50],i=0,item,count=0;
     float rate[50],amount[50],total=0;
     printf("enter the number of item");
@@ -19,10 +19,10 @@ int main(){
     }
     printf("--------------------\n");
     printf("--------BILL--------\n");
-    printf("S.no\t\tItem Name\t\tQuantity\t\tRate\t\tAmount");
-    while (count < item) {
-        printf("%d\t%s\t\t%d\t\t%.2f\t%.2f\n", count + 1, itemName[count], quantity[count], rate[count], amount[count]);
-        count++;
+    printf("S.no\tItem Name\tQuantity\tRate\t\tAmount\n");
+    for(count;count<item;count++) {
+        printf("%d\t%s\t\t%d\t\t%.2f\t\t%.2f\n", count+1 , itemName[count], quantity[count], rate[count], amount[count]);
+        
     }
 
     printf("--------------------\n");
