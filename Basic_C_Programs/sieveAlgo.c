@@ -14,17 +14,18 @@
 #include <stdbool.h>
 
 int prime(int i){
+    int a =0;
+
     if(i>2){
         for(int j=2;j<i;j++){
         if(i%j==0){
-           return false;
+           a =1;
            break; 
+        }}
+        if(a==1){
+            return false;
         }
-        else {
-           return true;
-            break;}
-        }
-
+        else return true;
     }
     else{
         return true;
@@ -34,7 +35,7 @@ int main() {
     int num ,i=2;
     printf("Enter the number");
     scanf("%d",&num);
-    for(i; i<=num;i++){
+    for(i; i<num;i++){
         if(prime(i)==true){
             printf("%d,",i);
         }
