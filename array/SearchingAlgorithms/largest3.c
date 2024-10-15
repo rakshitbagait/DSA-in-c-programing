@@ -41,7 +41,4 @@ int largest(int arr[],int size){
     printf("The largest 3 elements in array %d,%d,%d",first , second ,third);
 
     }
-    
-    
-
 }
