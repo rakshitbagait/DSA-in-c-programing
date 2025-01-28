@@ -5,12 +5,12 @@
 
 int main(void)
 {
-    int a = 1;
-    int d = 2;
+    int a = 0;
+    int d = 1;
     int n;
     printf("enter the n");
     scanf("%d", &n);
-    for (int i = 1; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         a += d;
         d++;
